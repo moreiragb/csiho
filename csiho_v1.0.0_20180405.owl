@@ -1,0 +1,1712 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://gb.moreira.nom.br/csiho.owl#"
+     xml:base="http://gb.moreira.nom.br/csiho.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:csiho="http://gb.moreira.nom.br/csiho.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://gb.moreira.nom.br/csiho.owl">
+        <owl:versionIRI rdf:resource="http://gb.moreira.nom.br/csiho.owl/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#OWLObjectProperty_b8888d6b_68f6_41e6_af3a_e91286340890 -->
+
+    <owl:ObjectProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#OWLObjectProperty_b8888d6b_68f6_41e6_af3a_e91286340890">
+        <rdfs:label xml:lang="pt">creates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#has_affected_asset -->
+
+    <owl:ObjectProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#has_affected_asset">
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+        <rdfs:range rdf:resource="http://gb.moreira.nom.br/csiho.owl#Computer_Asset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#has_coa -->
+
+    <owl:ObjectProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#has_coa">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#has_coa_creation_analyst -->
+
+    <owl:ObjectProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#has_coa_creation_analyst">
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+        <rdfs:range rdf:resource="http://gb.moreira.nom.br/csiho.owl#Tier3"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#has_confirmation_analyst -->
+
+    <owl:ObjectProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#has_confirmation_analyst">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Incident"/>
+        <rdfs:range rdf:resource="http://gb.moreira.nom.br/csiho.owl#Tier2"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#has_event -->
+
+    <owl:ObjectProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#has_event">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#isAnalyzed -->
+
+    <owl:ObjectProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#isAnalyzed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#registerIncident -->
+
+    <owl:ObjectProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#registerIncident"/>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#tl_occurrence_has_coa -->
+
+    <owl:ObjectProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#tl_occurrence_has_coa">
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence"/>
+        <rdfs:range rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#tl_occurrence_has_incident -->
+
+    <owl:ObjectProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#tl_occurrence_has_incident">
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#TimeLine_Occurrence"/>
+        <rdfs:range rdf:resource="http://gb.moreira.nom.br/csiho.owl#Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#OWLDataProperty_0977751f_c627_4120_b7cc_37e8f19269e1 -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#OWLDataProperty_0977751f_c627_4120_b7cc_37e8f19269e1">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#OWLDataProperty_a7382310_8f62_4571_a046_b29fdfc116d7"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Incident"/>
+        <rdfs:label xml:lang="pt">incident_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#OWLDataProperty_a7382310_8f62_4571_a046_b29fdfc116d7 -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#OWLDataProperty_a7382310_8f62_4571_a046_b29fdfc116d7">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:label xml:lang="pt">incident</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#analyst -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#analyst"/>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#analyst_name -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#analyst_name">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#antivirus -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#antivirus">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Antivirus_Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_creation_dateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_creation_dateTime">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#course_of_action"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_description -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_description">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#course_of_action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#computer_asset -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#computer_asset">
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Computer_Asset"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#course_of_action -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#course_of_action"/>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event"/>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_av_agent -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_av_agent">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#antivirus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_av_response -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_av_response">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#antivirus"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_av_signature -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_av_signature">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#antivirus"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_av_version -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_av_version">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#antivirus"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_description -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_description">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_detection_dateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_detection_dateTime">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_dst_address -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_dst_address">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_dst_hostname -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_dst_hostname">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_dst_port -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_dst_port">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_firewall_application -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_firewall_application">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#firewall"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_firewall_client_agent -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_firewall_client_agent">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#firewall"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_firewall_client_username -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_firewall_client_username">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#firewall"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_firewall_connection_id -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_firewall_connection_id">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#firewall"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_firewall_dest_net -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_firewall_dest_net">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#firewall"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_firewall_in_iface -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_firewall_in_iface">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#firewall"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_firewall_out_iface -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_firewall_out_iface">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#firewall"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_firewall_protocol -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_firewall_protocol">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#firewall"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_firewall_recv_bytes -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_firewall_recv_bytes">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#firewall"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_firewall_response -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_firewall_response">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#firewall"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_firewall_rule_id -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_firewall_rule_id">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#firewall"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_firewall_sent_bytes -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_firewall_sent_bytes">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#firewall"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_firewall_session_id -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_firewall_session_id">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#firewall"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_firewall_source_net -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_firewall_source_net">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#firewall"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_ips_agent -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_ips_agent">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#ips"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_ips_response -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_ips_response">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#ips"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_ips_signature -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_ips_signature">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#ips"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_ips_version -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_ips_version">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#ips"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_proxy_client_agent -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_proxy_client_agent">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#proxy"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_proxy_client_username -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_proxy_client_username">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#proxy"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_proxy_request_method -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_proxy_request_method">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#proxy"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_proxy_request_query -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_proxy_request_query">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#proxy"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_proxy_request_url -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_proxy_request_url">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#proxy"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_proxy_response_type -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_proxy_response_type">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#proxy"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_registration_dateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_registration_dateTime">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_src_address -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_src_address">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_src_hostname -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_src_hostname">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_src_net -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_src_net">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_src_port -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_src_port">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_system_address -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_system_address">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_system_hostname -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_system_hostname">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_system_product -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_system_product">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_system_type -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_system_type">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_system_vendor -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_system_vendor">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_system_version -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_system_version">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_timezone -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#event_timezone">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#firewall -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#firewall">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Firewall_Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#hostname -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#hostname">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#computer_asset"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#incident_confirmation_dateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#incident_confirmation_dateTime">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#OWLDataProperty_a7382310_8f62_4571_a046_b29fdfc116d7"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#incident_desc -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#incident_desc">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#OWLDataProperty_a7382310_8f62_4571_a046_b29fdfc116d7"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Incident"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#incident_end_dateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#incident_end_dateTime">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#OWLDataProperty_a7382310_8f62_4571_a046_b29fdfc116d7"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#incident_name -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#incident_name">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#OWLDataProperty_a7382310_8f62_4571_a046_b29fdfc116d7"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Incident"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#incident_type -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#incident_type">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#OWLDataProperty_a7382310_8f62_4571_a046_b29fdfc116d7"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Incident"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#ip_address -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#ip_address">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#computer_asset"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#ips -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#ips">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#IPS_Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#proxy -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#proxy">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#event"/>
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#Proxy_Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#timeline_occurence -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#timeline_occurence">
+        <rdfs:domain rdf:resource="http://gb.moreira.nom.br/csiho.owl#TimeLine_Occurrence"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#tl_occurrence_datetime -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#tl_occurrence_datetime">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#timeline_occurence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#tl_occurrence_incident_phase -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#tl_occurrence_incident_phase">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#timeline_occurence"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Contenção</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Erradicação</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Recuperação</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#tl_occurrence_notes -->
+
+    <owl:DatatypeProperty rdf:about="http://gb.moreira.nom.br/csiho.owl#tl_occurrence_notes">
+        <rdfs:subPropertyOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#timeline_occurence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#Analyst -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#Analyst">
+        <rdfs:subClassOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#Antivirus_Event -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#Antivirus_Event">
+        <rdfs:subClassOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence">
+        <rdfs:subClassOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#TimeLine_Occurrence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#Computer_Asset -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#Computer_Asset"/>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#Course_of_Action -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#Firewall_Event -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#Firewall_Event">
+        <rdfs:subClassOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#Generic_TimeLine_Occurrence -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#Generic_TimeLine_Occurrence">
+        <rdfs:subClassOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#TimeLine_Occurrence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#IPS_Event -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#IPS_Event">
+        <rdfs:subClassOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#Incident -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#Incident">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gb.moreira.nom.br/csiho.owl#has_event"/>
+                <owl:someValuesFrom rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gb.moreira.nom.br/csiho.owl#has_coa"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#Incident_Detection_Rule -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#Incident_Detection_Rule">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gb.moreira.nom.br/csiho.owl#registerIncident"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://gb.moreira.nom.br/csiho.owl#Incident"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#Person -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#Person"/>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#Proxy_Event -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#Proxy_Event">
+        <rdfs:subClassOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#Security_Event -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#Security_Event">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://gb.moreira.nom.br/csiho.owl#isAnalyzed"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://gb.moreira.nom.br/csiho.owl#Incident_Detection_Rule"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://gb.moreira.nom.br/csiho.owl#isAnalyzed"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://gb.moreira.nom.br/csiho.owl#Tier1"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#Server -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#Server">
+        <rdfs:subClassOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#Computer_Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#Sysmon_Event -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#Sysmon_Event">
+        <rdfs:subClassOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#Security_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#Tier1 -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#Tier1">
+        <rdfs:subClassOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#Analyst"/>
+    </owl:Class>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#Tier2 -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#Tier2">
+        <rdfs:subClassOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#Analyst"/>
+    </owl:Class>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#Tier3 -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#Tier3">
+        <rdfs:subClassOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#Analyst"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gb.moreira.nom.br/csiho.owl#OWLObjectProperty_b8888d6b_68f6_41e6_af3a_e91286340890"/>
+                <owl:someValuesFrom rdf:resource="http://gb.moreira.nom.br/csiho.owl#Incident"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#TimeLine_Occurrence -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#TimeLine_Occurrence"/>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#Workstation -->
+
+    <owl:Class rdf:about="http://gb.moreira.nom.br/csiho.owl#Workstation">
+        <rdfs:subClassOf rdf:resource="http://gb.moreira.nom.br/csiho.owl#Computer_Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#analyst_001 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#analyst_001">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Tier1"/>
+        <analyst_name>Lando</analyst_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#analyst_002 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#analyst_002">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Tier3"/>
+        <analyst_name>Lea</analyst_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#analyst_003 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#analyst_003">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Tier3"/>
+        <analyst_name>Luke</analyst_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#analyst_004 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#analyst_004">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Tier2"/>
+        <analyst_name>Solo</analyst_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_001 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_001">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+        <has_coa_creation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_003"/>
+        <coa_creation_dateTime>2017-05-12T10:35:00</coa_creation_dateTime>
+        <coa_description>Isolar o segmento de rede 10.0.1.0/24</coa_description>
+        <rdfs:comment>Isolar o segmento de rede 10.0.1.0/24</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_002 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_002">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+        <has_coa_creation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_003"/>
+        <coa_creation_dateTime>2017-05-12T10:38:00</coa_creation_dateTime>
+        <coa_description>Solicitar ação do fornecedor de antivirus (vacina/assinatura)</coa_description>
+        <rdfs:comment>Solicitar ação do fornecedor de antivirus (vacina/assinatura)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_003 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_003">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+        <has_coa_creation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_002"/>
+        <coa_creation_dateTime>2017-05-12T10:40:00</coa_creation_dateTime>
+        <coa_description>Enviar amostras dos binários de máquinas infectadas para o fornecedor de antivírus.</coa_description>
+        <rdfs:comment>Enviar amostras dos binários de máquinas infectadas para o fornecedor de antivírus.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_004 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_004">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+        <has_coa_creation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_003"/>
+        <coa_creation_dateTime>2017-05-12T11:25:00</coa_creation_dateTime>
+        <coa_description>Bloquear a porta 445 (SMB) nos firewalls de borda nas conexões com redes de subsidiárias, caso apresentem tráfego suspeito.</coa_description>
+        <rdfs:comment>Bloquear a porta 445 (SMB) nos firewalls de borda nas conexões com redes de subsidiárias, caso apresentem tráfego suspeito.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_004b -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_004b">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+        <has_coa_creation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_002"/>
+        <coa_creation_dateTime>2017-05-12T11:28:00</coa_creation_dateTime>
+        <coa_description>Isolar segmentos de rede que apresentarem tráfego suspeito, caso a TI não possua autonomia para atuar diretamente em um ou mais hosts afetados.</coa_description>
+        <rdfs:comment>Isolar segmentos de rede que apresentarem tráfego suspeito, caso a TI não possua autonomia para atuar diretamente em um ou mais hosts afetados.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_004c -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_004c">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+        <has_coa_creation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_002"/>
+        <coa_creation_dateTime>2017-05-12T11:30:00</coa_creation_dateTime>
+        <coa_description>Desligar hosts não contemplados pelas coa_004 e coa_004b, quando possível.</coa_description>
+        <rdfs:comment>Desligar hosts não contemplados pelas coa_004 e coa_004b, quando possível.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_005 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_005">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+        <has_coa_creation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_002"/>
+        <coa_creation_dateTime>2017-05-12T14:00:00</coa_creation_dateTime>
+        <coa_description>Bloquear execução dos binários conhecidos do ransomware, com base nas amostras (hashes) coletadas e outras obtidas pelo fornecedor de antivírus;</coa_description>
+        <rdfs:comment>Bloquear execução dos binários conhecidos do ransomware, com base nas amostras (hashes) coletadas e outras obtidas pelo fornecedor de antivírus.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_006 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_006">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+        <has_coa_creation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_003"/>
+        <coa_creation_dateTime>2017-05-12T15:33:00</coa_creation_dateTime>
+        <coa_description>Solicitar nova distribuição do patch que corrige a vulnerabilidade no SMB do Windows (boletim MS17-010), com boot obrigatório.</coa_description>
+        <rdfs:comment>Solicitar nova distribuição do patch que corrige a vulnerabilidade no SMB do Windows (boletim MS17-010), com boot obrigatório.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_007 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_007">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+        <has_coa_creation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_003"/>
+        <coa_creation_dateTime>2017-05-12T19:40:00</coa_creation_dateTime>
+        <coa_description>Distribuir nova “vacina” para o WannaCry liberada pelo fornecedor de antivírus.</coa_description>
+        <rdfs:comment>Distribuir nova “vacina” para o WannaCry liberada pelo fornecedor de antivírus.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_008 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_008">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+        <has_coa_creation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_003"/>
+        <coa_creation_dateTime>2017-05-13T11:00:00</coa_creation_dateTime>
+        <coa_description>Realizar levantamento de hosts: (i) Sem os patches do SMB; (ii) Com antivírus desatualizado (sem a nova vacina).</coa_description>
+        <rdfs:comment>Realizar levantamento de hosts: (i) Sem os patches do SMB; (ii) Com antivírus desatualizado (sem a nova vacina).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_009 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_009">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+        <has_coa_creation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_003"/>
+        <coa_creation_dateTime>2017-05-13T18:00:00</coa_creation_dateTime>
+        <coa_description>Desconectar ou desligar estações com potencial de contaminação, identificadas pelo coa_008.</coa_description>
+        <rdfs:comment>Desconectar ou desligar estações com potencial de contaminação, identificadas pelo coa_008.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_010 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_010">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+        <has_coa_creation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_003"/>
+        <coa_creation_dateTime>2017-05-14T19:00:00</coa_creation_dateTime>
+        <coa_description>Implementar servidor web interno respondendo às URLs do Kill Switch do WannaCry (honney pot).</coa_description>
+        <rdfs:comment>Implementar servidor web interno respondendo às URLs do Kill Switch do WannaCry (honney pot).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_011 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_011">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+        <has_coa_creation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_003"/>
+        <coa_creation_dateTime>2017-05-15T09:45:00</coa_creation_dateTime>
+        <coa_description>Bloquear extensões utilizadas pelo WannaCry nos servidores de arquivos.</coa_description>
+        <rdfs:comment>Bloquear extensões utilizadas pelo WannaCry nos servidores de arquivos.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_012 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_012">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+        <has_coa_creation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_003"/>
+        <coa_creation_dateTime>2017-05-15T11:05:00</coa_creation_dateTime>
+        <coa_description>Definir e divulgar fluxo de tratamento de máquinas suspeitas/vulneráveis e comunicar as equipes.</coa_description>
+        <rdfs:comment>Definir e divulgar fluxo de tratamento de máquinas suspeitas/vulneráveis e comunicar as equipes.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_013 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_013">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+        <has_coa_creation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_003"/>
+        <coa_creation_dateTime>2017-05-15T11:45:00</coa_creation_dateTime>
+        <coa_description>Orientar equipes de suporte local sobre procedimentos necessários para reconectar máquinas suspeitas desconectadas.</coa_description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#coa_014 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#coa_014">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Course_of_Action"/>
+        <has_coa_creation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_002"/>
+        <coa_creation_dateTime>2017-05-16T10:00:00</coa_creation_dateTime>
+        <coa_description>Establecer fluxo padrão para autorização de desbloqueio de portas em conexões com filiais.</coa_description>
+        <rdfs:comment>Establecer fluxo padrão para autorização de desbloqueio de portas em conexões com filiais.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_001 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#event_001">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Sysmon_Event"/>
+        <has_affected_asset rdf:resource="http://gb.moreira.nom.br/csiho.owl#server_001"/>
+        <event_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Service &quot;h6hy63y2uhs&quot; STOPPED</event_description>
+        <event_detection_dateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-12T09:00:00</event_detection_dateTime>
+        <event_registration_dateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-12T09:00:00</event_registration_dateTime>
+        <event_src_address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.0.1.51</event_src_address>
+        <event_src_hostname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">servidor_001</event_src_hostname>
+        <rdfs:comment>Serviço com nome estranho e parado</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_002 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#event_002">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Sysmon_Event"/>
+        <has_affected_asset rdf:resource="http://gb.moreira.nom.br/csiho.owl#server_002"/>
+        <has_affected_asset rdf:resource="http://gb.moreira.nom.br/csiho.owl#server_003"/>
+        <has_affected_asset rdf:resource="http://gb.moreira.nom.br/csiho.owl#server_004"/>
+        <has_affected_asset rdf:resource="http://gb.moreira.nom.br/csiho.owl#server_005"/>
+        <has_affected_asset rdf:resource="http://gb.moreira.nom.br/csiho.owl#server_006"/>
+        <has_affected_asset rdf:resource="http://gb.moreira.nom.br/csiho.owl#server_007"/>
+        <has_affected_asset rdf:resource="http://gb.moreira.nom.br/csiho.owl#server_008"/>
+        <has_affected_asset rdf:resource="http://gb.moreira.nom.br/csiho.owl#server_009"/>
+        <has_affected_asset rdf:resource="http://gb.moreira.nom.br/csiho.owl#server_010"/>
+        <has_affected_asset rdf:resource="http://gb.moreira.nom.br/csiho.owl#server_011"/>
+        <has_affected_asset rdf:resource="http://gb.moreira.nom.br/csiho.owl#server_012"/>
+        <has_affected_asset rdf:resource="http://gb.moreira.nom.br/csiho.owl#server_013"/>
+        <event_detection_dateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-12T10:30:00</event_detection_dateTime>
+        <rdfs:comment>Mais 12 servidores confirmados 1h depois</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_003 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#event_003">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#IPS_Event"/>
+        <event_detection_dateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-12T11:45:00</event_detection_dateTime>
+        <event_dst_port rdf:datatype="http://www.w3.org/2001/XMLSchema#int">445</event_dst_port>
+        <event_ips_response rdf:datatype="http://www.w3.org/2001/XMLSchema#string">port scan</event_ips_response>
+        <event_src_net rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.7.0.0/16</event_src_net>
+        <rdfs:comment>IPS detectou tráfego suspeito oriundo da subsidiária X</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_004 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#event_004">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#IPS_Event"/>
+        <event_detection_dateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-12T11:46:00</event_detection_dateTime>
+        <event_dst_port rdf:datatype="http://www.w3.org/2001/XMLSchema#int">445</event_dst_port>
+        <event_ips_response rdf:datatype="http://www.w3.org/2001/XMLSchema#string">port scan</event_ips_response>
+        <event_src_net rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.12.0.0/16</event_src_net>
+        <rdfs:comment>IPS detectou tráfego suspeito oriundo da subsidiária Y</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_005 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#event_005">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#IPS_Event"/>
+        <event_detection_dateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-06-19T14:35:00</event_detection_dateTime>
+        <event_dst_port rdf:datatype="http://www.w3.org/2001/XMLSchema#int">446</event_dst_port>
+        <event_ips_response rdf:datatype="http://www.w3.org/2001/XMLSchema#string">port scan</event_ips_response>
+        <event_src_net rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.3.0.0/16</event_src_net>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#event_006 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#event_006">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#IPS_Event"/>
+        <event_dst_port rdf:datatype="http://www.w3.org/2001/XMLSchema#int">446</event_dst_port>
+        <event_ips_response rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other</event_ips_response>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#incident_001 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#incident_001">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Incident"/>
+        <has_confirmation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_004"/>
+        <has_event rdf:resource="http://gb.moreira.nom.br/csiho.owl#event_001"/>
+        <has_event rdf:resource="http://gb.moreira.nom.br/csiho.owl#event_002"/>
+        <has_event rdf:resource="http://gb.moreira.nom.br/csiho.owl#event_003"/>
+        <has_event rdf:resource="http://gb.moreira.nom.br/csiho.owl#event_004"/>
+        <OWLDataProperty_0977751f_c627_4120_b7cc_37e8f19269e1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">incident_001</OWLDataProperty_0977751f_c627_4120_b7cc_37e8f19269e1>
+        <incident_confirmation_dateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-12T09:30:00</incident_confirmation_dateTime>
+        <incident_desc>Ataque do ransomware WannaCry</incident_desc>
+        <incident_end_dateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-21T09:00:00</incident_end_dateTime>
+        <incident_name>WannaCry 2017-05</incident_name>
+        <incident_type>ransomware</incident_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#incident_002 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#incident_002">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Incident"/>
+        <has_confirmation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_004"/>
+        <has_event rdf:resource="http://gb.moreira.nom.br/csiho.owl#event_005"/>
+        <has_event rdf:resource="http://gb.moreira.nom.br/csiho.owl#event_006"/>
+        <OWLDataProperty_0977751f_c627_4120_b7cc_37e8f19269e1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">incident_002</OWLDataProperty_0977751f_c627_4120_b7cc_37e8f19269e1>
+        <incident_confirmation_dateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-06-19T16:05:00</incident_confirmation_dateTime>
+        <incident_name>Petya 2017-06</incident_name>
+        <incident_type>ransomware</incident_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#incident_003 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#incident_003">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Incident"/>
+        <has_confirmation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_004"/>
+        <OWLDataProperty_0977751f_c627_4120_b7cc_37e8f19269e1>incident_003</OWLDataProperty_0977751f_c627_4120_b7cc_37e8f19269e1>
+        <incident_confirmation_dateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-13T09:30:00</incident_confirmation_dateTime>
+        <incident_desc>Novo ransomware Crynival</incident_desc>
+        <incident_name>Crynival 2018-02</incident_name>
+        <incident_type>ransomware</incident_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#incident_333 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#incident_333">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Incident"/>
+        <has_confirmation_analyst rdf:resource="http://gb.moreira.nom.br/csiho.owl#analyst_004"/>
+        <incident_confirmation_dateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-06-13T09:30:00</incident_confirmation_dateTime>
+        <incident_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malware para Linux, escrito em C, que compromete cameras IP integrando-as à uma botnet voltada para DDoS</incident_desc>
+        <incident_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LizardStresser 2016-06</incident_name>
+        <incident_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DDoS</incident_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#occurrence_001 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#occurrence_001">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence"/>
+        <tl_occurrence_has_coa rdf:resource="http://gb.moreira.nom.br/csiho.owl#coa_001"/>
+        <tl_occurrence_has_incident rdf:resource="http://gb.moreira.nom.br/csiho.owl#incident_001"/>
+        <tl_occurrence_datetime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-12T10:35:00</tl_occurrence_datetime>
+        <tl_occurrence_incident_phase>Contenção</tl_occurrence_incident_phase>
+        <tl_occurrence_notes>Aplicado coa_001</tl_occurrence_notes>
+        <rdfs:comment>Aplicado coa_001</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#occurrence_002 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#occurrence_002">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence"/>
+        <tl_occurrence_has_coa rdf:resource="http://gb.moreira.nom.br/csiho.owl#coa_002"/>
+        <tl_occurrence_has_incident rdf:resource="http://gb.moreira.nom.br/csiho.owl#incident_001"/>
+        <tl_occurrence_datetime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-12T10:38:00</tl_occurrence_datetime>
+        <tl_occurrence_incident_phase>Contenção</tl_occurrence_incident_phase>
+        <tl_occurrence_notes>Aplicado coa_002</tl_occurrence_notes>
+        <rdfs:comment>Aplicado coa_002</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#occurrence_003 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#occurrence_003">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Generic_TimeLine_Occurrence"/>
+        <tl_occurrence_has_incident rdf:resource="http://gb.moreira.nom.br/csiho.owl#incident_001"/>
+        <tl_occurrence_datetime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-12T14:00:00</tl_occurrence_datetime>
+        <tl_occurrence_incident_phase>Contenção</tl_occurrence_incident_phase>
+        <tl_occurrence_notes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instaurada sala de crise</tl_occurrence_notes>
+        <rdfs:comment>Instaurada sala de crise</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#occurrence_004 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#occurrence_004">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence"/>
+        <tl_occurrence_has_coa rdf:resource="http://gb.moreira.nom.br/csiho.owl#coa_003"/>
+        <tl_occurrence_has_incident rdf:resource="http://gb.moreira.nom.br/csiho.owl#incident_001"/>
+        <tl_occurrence_datetime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-12T10:51:00</tl_occurrence_datetime>
+        <tl_occurrence_incident_phase>Contenção</tl_occurrence_incident_phase>
+        <tl_occurrence_notes>Amostras enviadas para o fornencedor de antivírus</tl_occurrence_notes>
+        <rdfs:comment>Aplicado coa_003</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#occurrence_010 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#occurrence_010">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence"/>
+        <tl_occurrence_has_coa rdf:resource="http://gb.moreira.nom.br/csiho.owl#coa_004"/>
+        <tl_occurrence_has_incident rdf:resource="http://gb.moreira.nom.br/csiho.owl#incident_001"/>
+        <tl_occurrence_datetime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-12T12:11:00</tl_occurrence_datetime>
+        <tl_occurrence_incident_phase>Contenção</tl_occurrence_incident_phase>
+        <tl_occurrence_notes>Bloqueio da porta 445 na conexão com a Filial RJ1</tl_occurrence_notes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#occurrence_011 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#occurrence_011">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence"/>
+        <tl_occurrence_has_coa rdf:resource="http://gb.moreira.nom.br/csiho.owl#coa_004"/>
+        <tl_occurrence_has_incident rdf:resource="http://gb.moreira.nom.br/csiho.owl#incident_001"/>
+        <tl_occurrence_datetime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-12T12:40:00</tl_occurrence_datetime>
+        <tl_occurrence_incident_phase>Contenção</tl_occurrence_incident_phase>
+        <tl_occurrence_notes>Bloqueio da porta 445 na conexão com a Filial RJ2</tl_occurrence_notes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#occurrence_015 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#occurrence_015">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence"/>
+        <tl_occurrence_has_coa rdf:resource="http://gb.moreira.nom.br/csiho.owl#coa_005"/>
+        <tl_occurrence_has_incident rdf:resource="http://gb.moreira.nom.br/csiho.owl#incident_001"/>
+        <tl_occurrence_datetime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-12T14:00:00</tl_occurrence_datetime>
+        <tl_occurrence_incident_phase>Contenção</tl_occurrence_incident_phase>
+        <tl_occurrence_notes>Bloqueada execução dos binários conhecidos do ransomware, com base nas amostras (hashes) coletadas e outras obtidas pelo fornecedor de antivírus.</tl_occurrence_notes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#occurrence_016 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#occurrence_016">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence"/>
+        <tl_occurrence_has_coa rdf:resource="http://gb.moreira.nom.br/csiho.owl#coa_006"/>
+        <tl_occurrence_has_incident rdf:resource="http://gb.moreira.nom.br/csiho.owl#incident_001"/>
+        <tl_occurrence_datetime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-12T15:33:00</tl_occurrence_datetime>
+        <tl_occurrence_incident_phase>Contenção</tl_occurrence_incident_phase>
+        <tl_occurrence_notes>Solicitada nova distribuição do patch que corrige a vulnerabilidade no SMB do Windows (boletim MS17-010), com boot obrigatório.</tl_occurrence_notes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#occurrence_017 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#occurrence_017">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence"/>
+        <tl_occurrence_has_coa rdf:resource="http://gb.moreira.nom.br/csiho.owl#coa_007"/>
+        <tl_occurrence_has_incident rdf:resource="http://gb.moreira.nom.br/csiho.owl#incident_001"/>
+        <tl_occurrence_datetime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-12T19:40:00</tl_occurrence_datetime>
+        <tl_occurrence_incident_phase>Contenção</tl_occurrence_incident_phase>
+        <tl_occurrence_notes>Distribuida nova “vacina” para o WannaCry liberada pelo fornecedor de antivírus.</tl_occurrence_notes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#occurrence_018 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#occurrence_018">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence"/>
+        <tl_occurrence_has_coa rdf:resource="http://gb.moreira.nom.br/csiho.owl#coa_008"/>
+        <tl_occurrence_has_incident rdf:resource="http://gb.moreira.nom.br/csiho.owl#incident_001"/>
+        <tl_occurrence_datetime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-13T11:00:00</tl_occurrence_datetime>
+        <tl_occurrence_incident_phase>Contenção</tl_occurrence_incident_phase>
+        <tl_occurrence_notes>Realizado levantamento de hosts: (i) Sem os patches do SMB; (ii) Com antivírus desatualizado (sem a nova vacina).</tl_occurrence_notes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#occurrence_019 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#occurrence_019">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence"/>
+        <tl_occurrence_has_coa rdf:resource="http://gb.moreira.nom.br/csiho.owl#coa_009"/>
+        <tl_occurrence_has_incident rdf:resource="http://gb.moreira.nom.br/csiho.owl#incident_001"/>
+        <tl_occurrence_datetime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-13T18:00:00</tl_occurrence_datetime>
+        <tl_occurrence_incident_phase>Contenção</tl_occurrence_incident_phase>
+        <tl_occurrence_notes>Desconectadas (ou desligadas) estações com potencial de contaminação, identificadas pelo coa_008.</tl_occurrence_notes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#occurrence_020 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#occurrence_020">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence"/>
+        <tl_occurrence_has_coa rdf:resource="http://gb.moreira.nom.br/csiho.owl#coa_010"/>
+        <tl_occurrence_has_incident rdf:resource="http://gb.moreira.nom.br/csiho.owl#incident_001"/>
+        <tl_occurrence_datetime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-14T19:00:00</tl_occurrence_datetime>
+        <tl_occurrence_incident_phase>Contenção</tl_occurrence_incident_phase>
+        <tl_occurrence_notes>Implementado servidor web interno respondendo às URLs do Kill Switch do WannaCry (honney pot).</tl_occurrence_notes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#occurrence_021 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#occurrence_021">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence"/>
+        <tl_occurrence_has_coa rdf:resource="http://gb.moreira.nom.br/csiho.owl#coa_011"/>
+        <tl_occurrence_has_incident rdf:resource="http://gb.moreira.nom.br/csiho.owl#incident_001"/>
+        <tl_occurrence_datetime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-15T09:45:00</tl_occurrence_datetime>
+        <tl_occurrence_incident_phase>Erradicação</tl_occurrence_incident_phase>
+        <tl_occurrence_notes>Bloqueadas extensões utilizadas pelo WannaCry nos servidores de arquivos.</tl_occurrence_notes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#occurrence_022 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#occurrence_022">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence"/>
+        <tl_occurrence_has_coa rdf:resource="http://gb.moreira.nom.br/csiho.owl#coa_012"/>
+        <tl_occurrence_has_incident rdf:resource="http://gb.moreira.nom.br/csiho.owl#incident_001"/>
+        <tl_occurrence_datetime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-15T11:05:00</tl_occurrence_datetime>
+        <tl_occurrence_incident_phase>Erradicação</tl_occurrence_incident_phase>
+        <tl_occurrence_notes>Definido e divulgado fluxo de tratamento de máquinas suspeitas/vulneráveis e comunicar as equipes.</tl_occurrence_notes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#occurrence_023 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#occurrence_023">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence"/>
+        <tl_occurrence_has_coa rdf:resource="http://gb.moreira.nom.br/csiho.owl#coa_013"/>
+        <tl_occurrence_has_incident rdf:resource="http://gb.moreira.nom.br/csiho.owl#incident_001"/>
+        <tl_occurrence_datetime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-15T11:45:00</tl_occurrence_datetime>
+        <tl_occurrence_incident_phase>Erradicação</tl_occurrence_incident_phase>
+        <tl_occurrence_notes>Enviada orientação para equipes de suporte local sobre procedimentos necessários para reconectar máquinas suspeitas desconectadas</tl_occurrence_notes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#occurrence_024 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#occurrence_024">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence"/>
+        <tl_occurrence_has_coa rdf:resource="http://gb.moreira.nom.br/csiho.owl#coa_014"/>
+        <tl_occurrence_has_incident rdf:resource="http://gb.moreira.nom.br/csiho.owl#incident_001"/>
+        <tl_occurrence_datetime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-16T14:00:00</tl_occurrence_datetime>
+        <tl_occurrence_incident_phase>Recuperação</tl_occurrence_incident_phase>
+        <tl_occurrence_notes>Reestabelecida conexão com a filial RJ1, de acordo com o fluxo padrão estabelecido pelo coa_014.</tl_occurrence_notes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#occurrence_025 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#occurrence_025">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#COA_TimeLine_Occurrence"/>
+        <tl_occurrence_has_coa rdf:resource="http://gb.moreira.nom.br/csiho.owl#coa_014"/>
+        <tl_occurrence_has_incident rdf:resource="http://gb.moreira.nom.br/csiho.owl#incident_001"/>
+        <tl_occurrence_datetime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-16T15:00:00</tl_occurrence_datetime>
+        <tl_occurrence_incident_phase>Recuperação</tl_occurrence_incident_phase>
+        <tl_occurrence_notes>Reestabelecida conexão com a filial RJ2, de acordo com o fluxo padrão estabelecido pelo coa_014.</tl_occurrence_notes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#server_001 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#server_001">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Server"/>
+        <hostname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">server_001</hostname>
+        <ip_address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.0.1.51</ip_address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#server_002 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#server_002">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Server"/>
+        <hostname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">server_002</hostname>
+        <ip_address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.0.1.52</ip_address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#server_003 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#server_003">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Server"/>
+        <hostname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">server_003</hostname>
+        <ip_address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.0.1.53</ip_address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#server_004 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#server_004">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Server"/>
+        <hostname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">server_004</hostname>
+        <ip_address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.0.1.54</ip_address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#server_005 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#server_005">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Server"/>
+        <hostname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">server_005</hostname>
+        <ip_address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.0.1.55</ip_address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#server_006 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#server_006">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Server"/>
+        <hostname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">server_006</hostname>
+        <ip_address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.0.1.56</ip_address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#server_007 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#server_007">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Server"/>
+        <hostname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">server_007</hostname>
+        <ip_address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.0.1.57</ip_address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#server_008 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#server_008">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Server"/>
+        <hostname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">server_008</hostname>
+        <ip_address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.0.1.58</ip_address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#server_009 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#server_009">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Server"/>
+        <hostname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">server_009</hostname>
+        <ip_address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.0.1.59</ip_address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#server_010 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#server_010">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Server"/>
+        <hostname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">server_010</hostname>
+        <ip_address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.0.1.60</ip_address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#server_011 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#server_011">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Server"/>
+        <hostname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">server_011</hostname>
+        <ip_address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.0.1.61</ip_address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#server_012 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#server_012">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Server"/>
+        <hostname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">server_012</hostname>
+        <ip_address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.0.1.62</ip_address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gb.moreira.nom.br/csiho.owl#server_013 -->
+
+    <owl:NamedIndividual rdf:about="http://gb.moreira.nom.br/csiho.owl#server_013">
+        <rdf:type rdf:resource="http://gb.moreira.nom.br/csiho.owl#Server"/>
+        <hostname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">server_013</hostname>
+        <ip_address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.0.1.63</ip_address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://gb.moreira.nom.br/csiho.owl#Antivirus_Event"/>
+            <rdf:Description rdf:about="http://gb.moreira.nom.br/csiho.owl#Firewall_Event"/>
+            <rdf:Description rdf:about="http://gb.moreira.nom.br/csiho.owl#IPS_Event"/>
+            <rdf:Description rdf:about="http://gb.moreira.nom.br/csiho.owl#Proxy_Event"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://gb.moreira.nom.br/csiho.owl#Tier1"/>
+            <rdf:Description rdf:about="http://gb.moreira.nom.br/csiho.owl#Tier2"/>
+            <rdf:Description rdf:about="http://gb.moreira.nom.br/csiho.owl#Tier3"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
